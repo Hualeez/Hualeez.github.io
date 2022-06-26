@@ -139,7 +139,7 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://Hualingz.cn/undefined/OOP笔记/">
+  <link rel="canonical" href="http://Hualingz.cn/Learning/OOP笔记/">
   <title>
     
       OOP笔记 - Hualingz_Channel
@@ -758,7 +758,7 @@
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Point</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> x;</span><br><span class="line">    <span class="type">int</span> y;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">Point</span>()&#123;&#125;</span><br><span class="line">    <span class="built_in">Point</span>(<span class="type">int</span> a,<span class="type">int</span> b):<span class="built_in">x</span>(a),<span class="built_in">y</span>(b)&#123;cout&lt;&lt;<span class="string">&quot;Ctor&quot;</span>&lt;&lt;endl;&#125;</span><br><span class="line">    ~<span class="built_in">Point</span>()&#123;cout&lt;&lt;<span class="string">&quot;Dtor&quot;</span>&lt;&lt;endl;&#125;</span><br><span class="line">    Point <span class="keyword">operator</span>+(Point a);</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">get_xy</span><span class="params">()</span></span>&#123;cout&lt;&lt;x&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;y&lt;&lt;endl;&#125;</span><br><span class="line">&#125;;</span><br><span class="line">Point Point::<span class="keyword">operator</span>+(Point a)&#123;Point temp;temp.x=<span class="keyword">this</span>-&gt;x+a.x;temp.y=<span class="keyword">this</span>-&gt;y+a.y;<span class="keyword">return</span> temp;&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="function">Point <span class="title">a</span><span class="params">(<span class="number">1</span>,<span class="number">2</span>)</span></span>;</span><br><span class="line">    <span class="function">Point <span class="title">b</span><span class="params">(<span class="number">4</span>,<span class="number">5</span>)</span></span>;</span><br><span class="line">    Point c = a+b;</span><br><span class="line">    c.<span class="built_in">get_xy</span>();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 <h4 id="5-2-默认参数缺省"><a href="#5-2-默认参数缺省" class="headerlink" title="5.2 默认参数缺省"></a>5.2 默认参数缺省</h4><p>缺省参数的右边一定是缺省参数</p>
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220424122143515.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220424122143515.png">
 
 <h3 id="6-Container"><a href="#6-Container" class="headerlink" title="6.  Container"></a>6.  Container</h3><ul>
 <li>STL &#x3D; Standard Template Library</li>
@@ -819,7 +819,7 @@
 <h3 id="2-list链表"><a href="#2-list链表" class="headerlink" title="2. list链表"></a>2. list链表</h3><h4 id="2-1-定义"><a href="#2-1-定义" class="headerlink" title="2.1 定义"></a>2.1 定义</h4><ul>
 <li>相当于C的链表</li>
 <li>Constructors</li>
-<li>x.front( ) 和 x.back( <img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220325102200722.png"> alt&#x3D;”image-20220325102200722” style&#x3D;”zoom:50%;” &#x2F;&gt;</li>
+<li>x.front( ) 和 x.back( <img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220325102200722.png"> alt&#x3D;”image-20220325102200722” style&#x3D;”zoom:50%;” &#x2F;&gt;</li>
 </ul>
 <h3 id="3-map"><a href="#3-map" class="headerlink" title="3. map"></a>3. map</h3><h4 id="3-1-定义"><a href="#3-1-定义" class="headerlink" title="3.1 定义"></a>3.1 定义</h4><ul>
 <li>多个对,相当于python的字典</li>
@@ -1130,7 +1130,7 @@ void MyLib::fun()&#123;
 <li><p>子父类的选择：</p>
 <p>shape→Ellipse→circle</p>
 <p>圆是特殊的椭圆</p>
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220415104804288.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220415104804288.png">
 
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">XYPos</span>&#123;...&#125;;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Shape</span>&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="built_in">Shape</span>();</span><br><span class="line">  <span class="keyword">virtual</span> ~<span class="built_in">Shape</span>();</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="type">void</span> <span class="title">render</span><span class="params">()</span></span>;</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">move</span><span class="params">(<span class="type">const</span> XYPos&amp;)</span></span>;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="type">void</span> <span class="title">resize</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">  XYPos center;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Ellipse</span>:<span class="keyword">public</span> Shape&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="built_in">Ellipse</span>(<span class="type">float</span> maj,<span class="type">float</span> minr);</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="type">void</span> <span class="title">render</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">protected</span>:</span><br><span class="line">  <span class="type">float</span> major_axis,minor_axis;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Circle</span> : <span class="keyword">public</span> Ellipse &#123; </span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="built_in">Circle</span>(<span class="type">float</span> radius) :        </span><br><span class="line">  <span class="built_in">Ellipse</span>(radius, radius)&#123;&#125;  </span><br><span class="line">    <span class="function"><span class="keyword">virtual</span> <span class="type">void</span> <span class="title">render</span><span class="params">()</span></span>; </span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
 </ul>
@@ -1175,7 +1175,7 @@ void MyLib::fun()&#123;
 <li><p><strong>纯虚函数是把一个函数&#x3D;0</strong></p>
 </li>
 <li><p>只定义了接口，没有function body</p>
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220422104422233.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220422104422233.png">
 </li>
 <li><p>为什么用抽象类</p>
 <ul>
@@ -1210,7 +1210,7 @@ void MyLib::fun()&#123;
 <h4 id="1-10-多类继承"><a href="#1-10-多类继承" class="headerlink" title="1.10 多类继承"></a>1.10 多类继承</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Employee</span> &#123; </span><br><span class="line"><span class="keyword">protected</span>:  </span><br><span class="line">  String name;</span><br><span class="line">  EmpID id; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MTS</span> : <span class="keyword">public</span> Employee &#123;</span><br><span class="line"><span class="keyword">protected</span>: </span><br><span class="line">  Degrees degree_info; </span><br><span class="line">&#125;; </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Temporary</span> &#123; </span><br><span class="line"><span class="keyword">protected</span>: </span><br><span class="line">  Company employer; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Consultant</span>:  <span class="keyword">public</span> MTS,  <span class="keyword">public</span> Temporary &#123;</span><br><span class="line">... &#125;;</span><br></pre></td></tr></table></figure>
 
 <p>此时Consultant有MTS和Temporary的属性</p>
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220422110005378.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220422110005378.png">
 
 <h4 id="【注意】虚表"><a href="#【注意】虚表" class="headerlink" title="【注意】虚表"></a>【注意】虚表</h4><p>每个包含虚函数的类都有一个虚表，虚表是属于类的，而不是属于某个具体的对象，一个类只需要一个虚表即可。同一个类的所有对象都使用同一个虚表。为了指定对象的虚表，对象内部包含指向一个虚表的指针，来指向自己所使用的虚表。为了让每个包含虚表的类的对象都拥有一个虚表指针，编译器在类中添加了一个指针，<code>*__vptr</code>，用来指向虚表。 这样，当类的对象在创建时便拥有了这个指针，且这个指针的值会自动被设置为指向类的虚表。</p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/353260837#:~:text=%E8%99%9A%E8%A1%A8%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E6%8C%87,%E5%87%BD%E6%95%B0%E6%89%80%E5%9C%A8%E7%9A%84%E4%BD%8D%E7%BD%AE%E3%80%82">https://zhuanlan.zhihu.com/p/353260837#:~:text=%E8%99%9A%E8%A1%A8%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%E6%8C%87,%E5%87%BD%E6%95%B0%E6%89%80%E5%9C%A8%E7%9A%84%E4%BD%8D%E7%BD%AE%E3%80%82</a></p>
@@ -1259,7 +1259,7 @@ void MyLib::fun()&#123;
 </li>
 <li><p>有指针的到时候要自己写拷贝构造</p>
 </li>
-<li><img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220422112354516.png"></li>
+<li><img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220422112354516.png"></li>
 </ul>
 <h2 id="WK10"><a href="#WK10" class="headerlink" title="WK10"></a>WK10</h2><h3 id="1-复制构造什么时候调用"><a href="#1-复制构造什么时候调用" class="headerlink" title="1. 复制构造什么时候调用"></a>1. 复制构造什么时候调用</h3><ol>
 <li><p>调用函数时，函数的参数是<strong>对象本身</strong>，不是指针不是引用</p>
@@ -1279,7 +1279,7 @@ void MyLib::fun()&#123;
 <li><strong>当一个对象被构造，他能作为一个变量来赋值</strong>，C++的特性</li>
 </ul>
 <h3 id="2-运算符重载"><a href="#2-运算符重载" class="headerlink" title="2. 运算符重载"></a>2. 运算符重载</h3><p>加减乘除的运算可以进行重载，可以自己写一个类重写运算符。</p>
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220429103143650.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220429103143650.png">
 
 <h4 id="2-1-限制"><a href="#2-1-限制" class="headerlink" title="2.1 限制"></a>2.1 限制</h4><ol>
 <li>只有已经存在的运算符才能重载</li>
@@ -1481,7 +1481,7 @@ a.print();
 <h4 id="7-1-右值的引用"><a href="#7-1-右值的引用" class="headerlink" title="7.1 右值的引用"></a>7.1 右值的引用</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> x=<span class="number">20</span>;<span class="comment">//左值</span></span><br><span class="line"><span class="type">int</span> &amp;&amp; rx=x*<span class="number">2</span><span class="comment">//x*2是一个右值，一个&amp;是左值引用，两个&amp;是右值引用即rx绑定了一个右值</span></span><br><span class="line"><span class="type">int</span> y=rx+<span class="number">2</span>;<span class="comment">//y=42</span></span><br><span class="line">rx=<span class="number">100</span>;一旦初始化一个右值引用变量，那么这个变量就成为了一个左值</span><br><span class="line"><span class="type">int</span> &amp;&amp; rrx1=x;<span class="comment">//非法：右值引用无法被左值初始化</span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span>&amp;&amp; rrx2=x;<span class="comment">//非法：右值引用无法被左值初始化</span></span><br></pre></td></tr></table></figure>
 
 <p>右值引用变量的初始化只能是右值</p>
-<p>但是<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220622201829652.png"> alt&#x3D;”image-20220622201829652” style&#x3D;”zoom:50%;” &#x2F;&gt;</p>
+<p>但是<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220622201829652.png"> alt&#x3D;”image-20220622201829652” style&#x3D;”zoom:50%;” &#x2F;&gt;</p>
 <h3 id="8-移动构造"><a href="#8-移动构造" class="headerlink" title="8. 移动构造"></a>8. 移动构造</h3><p>所谓移动语义，指的就是以移动而非深拷贝的方式初始化含有指针成员的类对象。简单的理解，移动语义指的就是将其他对象（通常是临时对象）拥有的内存资源“移为已用”。</p>
 <p>以前面程序中的 demo 类为例，该类的成员都包含一个整形的指针成员，其默认指向的是容纳一个整形变量的堆空间。当使用 get_demo() 函数返回的临时对象初始化 a 时，我们只需要将临时对象的 num 指针直接浅拷贝给 a.num，然后修改该临时对象中 num 指针的指向（通常另其指向 NULL），这样就完成了 a.num 的初始化。</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">demo</span>&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">   <span class="built_in">demo</span>():<span class="built_in">num</span>(<span class="keyword">new</span> <span class="built_in">int</span>(<span class="number">0</span>))&#123;</span><br><span class="line">      cout&lt;&lt;<span class="string">&quot;construct!&quot;</span>&lt;&lt;endl;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="comment">//拷贝构造函数</span></span><br><span class="line">   <span class="built_in">demo</span>(<span class="type">const</span> demo &amp;d):<span class="built_in">num</span>(<span class="keyword">new</span> <span class="built_in">int</span>(*d.num))&#123;</span><br><span class="line">      cout&lt;&lt;<span class="string">&quot;copy construct!&quot;</span>&lt;&lt;endl;</span><br><span class="line">   &#125;</span><br><span class="line">   ~<span class="built_in">demo</span>()&#123;</span><br><span class="line">      cout&lt;&lt;<span class="string">&quot;class destruct!&quot;</span>&lt;&lt;endl;</span><br><span class="line">   &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">   <span class="type">int</span> *num;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function">demo <span class="title">get_demo</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">demo</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    demo a = <span class="built_in">get_demo</span>();</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1600,7 +1600,7 @@ a.print();
 <li><p>载</p>
 </li>
 </ul>
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220527094900344.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220527094900344.png">
 
 <h4 id="1-5-函数后面加throw"><a href="#1-5-函数后面加throw" class="headerlink" title="1.5 函数后面加throw()"></a>1.5 函数后面加throw()</h4><ul>
 <li>可以在函数名后面加 noexcept 关键字，说明该函数在运行的过程中不抛出任何异常，如果<br>还是产生了异常，就会调用 <code>std::terminate</code> 终止程序</li>
@@ -1626,15 +1626,15 @@ a.print();
 </ul>
 </li>
 </ul>
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220527100852792.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220527100852792.png">
 
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">abc = <span class="string">&quot;Hello world&quot;</span>;<span class="comment">//copy on write</span></span><br></pre></td></tr></table></figure>
 
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220527101028521.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220527101028521.png">
 
 <h5 id="Reference-counting"><a href="#Reference-counting" class="headerlink" title="Reference counting"></a>Reference counting</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//当</span></span><br><span class="line">p=q;</span><br><span class="line"><span class="comment">//我们要做</span></span><br><span class="line">p-&gt;decreament;<span class="comment">//计数器减一</span></span><br><span class="line">p=q;<span class="comment">//赋值</span></span><br><span class="line">q-&gt;increament;<span class="comment">//计数器加一</span></span><br></pre></td></tr></table></figure>
 
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220527101156603.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220527101156603.png">
 
 <h5 id="Reusing-Reference-Counting"><a href="#Reusing-Reference-Counting" class="headerlink" title="Reusing Reference Counting"></a>Reusing Reference Counting</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;assert.h&gt;</span></span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">UCOject</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">  <span class="built_in">UCObject</span>():<span class="built_in">m_refCount</span>(<span class="number">0</span>)&#123;&#125;;</span><br><span class="line">  <span class="keyword">virtual</span> ~<span class="built_in">UCOject</span>()&#123;</span><br><span class="line">    <span class="built_in">assert</span>(m_refCount==<span class="number">0</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">UCObject</span>(<span class="type">const</span> UCObject &amp;):<span class="built_in">m_refCount</span>(<span class="number">0</span>)&#123;&#125;;</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">incr</span><span class="params">()</span></span>&#123;</span><br><span class="line">    m_refCount++;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="type">void</span> <span class="title">decr</span><span class="params">()</span></span>&#123;</span><br><span class="line">    m_refCount--;</span><br><span class="line">    <span class="keyword">if</span>(m_refCount==<span class="number">0</span>)&#123;</span><br><span class="line">      <span class="keyword">delete</span> <span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="type">int</span> <span class="title">reference</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> m_refCount;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="keyword">private</span>:</span><br><span class="line">  <span class="type">int</span> m_refCount;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -1654,7 +1654,7 @@ a.print();
 <li>Sequential</li>
 <li>Can：produce values、consume values</li>
 </ol>
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220610102726386.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220610102726386.png">
 
 <p>流的分类：</p>
 <ol>
@@ -1688,23 +1688,23 @@ a.print();
 <li><p>istream &amp; get (char&amp; ch)这里有隐藏的参数this</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cin&gt;&gt;<span class="built_in">get</span>(&amp;c);</span><br></pre></td></tr></table></figure>
 
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220610105053660.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220610105053660.png">
 
-<p>get( )不读回车<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220610105144156.png"></p>
+<p>get( )不读回车<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220610105144156.png"></p>
 </li>
 </ul>
 <h3 id><a href="#" class="headerlink" title></a></h3><h3 id="1-5-Formatting"><a href="#1-5-Formatting" class="headerlink" title="1.5 Formatting"></a>1.5 Formatting</h3><p>头文件：iomanipint n; </p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; <span class="string">&quot;enter number in hexadecimal&quot;</span>  &lt;&lt; flush; </span><br><span class="line">cin &gt;&gt; hex &gt;&gt; n;</span><br></pre></td></tr></table></figure>
 
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220610110447910.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220610110447910.png">
 
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220610111058749.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220610111058749.png">
 
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220610111134200.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220610111134200.png">
 
 
 
-<img src="/undefined/OOP%E7%AC%94%E8%AE%B0/image-20220610111516092.png">
+<img src="/Learning/OOP%E7%AC%94%E8%AE%B0/image-20220610111516092.png">
 
 
         <hr>
@@ -1712,7 +1712,7 @@ a.print();
         <ul class="pager">
           
           <li class="previous">
-            <a href="/undefined/ADS笔记/" data-toggle="tooltip" data-placement="top" title="ADS笔记">&larr; Previous Post</a>
+            <a href="/Learning/ADS笔记/" data-toggle="tooltip" data-placement="top" title="ADS笔记">&larr; Previous Post</a>
           </li>
           
           
@@ -1766,7 +1766,7 @@ a.print();
       </a>
     </li>
     <li class="social-share-li">
-      <a target="_blank" class="social-share-icon" href="mailto:?subject=OOP笔记&body=Hi,I found this website and thought you might like it http://Hualingz.cn/undefined/OOP笔记/">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=OOP笔记&body=Hi,I found this website and thought you might like it http://Hualingz.cn/Learning/OOP笔记/">
         <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
       </a>
     </li>
