@@ -139,7 +139,7 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://Hualingz.cn/undefined/机器学习/">
+  <link rel="canonical" href="http://Hualingz.cn/Learning/机器学习/">
   <title>
     
       机器学习 - Hualingz_Channel
@@ -397,11 +397,11 @@
             <!-- WordCount start -->
             <div class="blank_box"></div>
             <span class="meta">
-              Estimated Reading Time <span class="post-count">16</span> Minutes
+              Estimated Reading Time <span class="post-count">27</span> Minutes
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">3.7k</span> In Total
+              Words <span class="post-count">5.9k</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -463,7 +463,11 @@
       <!-- Post Container -->
       <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
 
-        <h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><h2 id="Lecture-1"><a href="#Lecture-1" class="headerlink" title="Lecture 1"></a>Lecture 1</h2><p>赵洲，<a href="mailto:&#x7a;&#x68;&#x61;&#x6f;&#122;&#x68;&#x6f;&#x75;&#x40;&#x7a;&#106;&#x75;&#x2e;&#101;&#100;&#117;&#46;&#99;&#x6e;">&#x7a;&#x68;&#x61;&#x6f;&#122;&#x68;&#x6f;&#x75;&#x40;&#x7a;&#106;&#x75;&#x2e;&#101;&#100;&#117;&#46;&#99;&#x6e;</a>，曹主415</p>
+        <ul>
+<li><ul>
+<li><ul>
+<li><ul>
+<li><h1 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h1><h2 id="Lecture-1"><a href="#Lecture-1" class="headerlink" title="Lecture 1"></a>Lecture 1</h2><p>赵洲，zhaozhou@zju.edu.cn，曹主415</p>
 <h3 id="1-1分数组成"><a href="#1-1分数组成" class="headerlink" title="1.1分数组成"></a>1.1分数组成</h3><ul>
 <li>大作业（图片分类）：70%<ul>
 <li><a target="_blank" rel="noopener" href="http://yann.lecun.com/exdb/mnist">http://yann.lecun.com/exdb/mnist</a></li>
@@ -517,30 +521,18 @@
 <li>是延时的一个监督学习</li>
 <li>这里的label是环境作用于机器的，是有延迟的reward</li>
 </ul>
-<h2 id="Lecture-2"><a href="#Lecture-2" class="headerlink" title="Lecture 2"></a>Lecture 2</h2><h3 id="2-1监督学习"><a href="#2-1监督学习" class="headerlink" title="2.1监督学习"></a>2.1监督学习</h3><p>【贝叶斯定理】$P(A|B)&#x3D;\frac{P(B|A)·P(A)}{P(B)}$</p>
+<h2 id="Lecture-2"><a href="#Lecture-2" class="headerlink" title="Lecture 2"></a>Lecture 2</h2><h3 id="2-1监督学习"><a href="#2-1监督学习" class="headerlink" title="2.1监督学习"></a>2.1监督学习</h3><p>【贝叶斯定理】$P(A|B)=\frac{P(B|A)·P(A)}{P(B)}$</p>
 <ul>
 <li>$P(A|B)$为后验概率，posterior</li>
 <li>$P(B|A)$为似然度，likelihood来自于model</li>
 <li>$P(A)$为先验Prior，来自label的比例</li>
 </ul>
 <p>【Example】</p>
-<table>
-<thead>
-<tr>
-<th>A</th>
-<th>0</th>
-<th>0</th>
-<th>1</th>
-<th>1</th>
-<th>1</th>
-<th>0</th>
-</tr>
-</thead>
-</table>
+<p>| A    | 0    | 0    | 1    | 1    | 1    | 0    |<br>| —— | —— | —— | —— | —— | —— | —— |</p>
 <h4 id="先验"><a href="#先验" class="headerlink" title="先验"></a>先验</h4><p>先验一般有两种情况：</p>
 <ol>
-<li>Uniform的情况$P(w_1)&#x3D;P(w_2)$</li>
-<li>$P(w_1)+P(w_2)&#x3D;1$</li>
+<li>Uniform的情况$P(w_1)=P(w_2)$</li>
+<li>$P(w_1)+P(w_2)=1$</li>
 </ol>
 <p>只根据先验的决策：</p>
 <ul>
@@ -551,8 +543,8 @@
 <li>likelihood从观测中的data中来</li>
 <li>如果$P(x|w_1)&gt;P(x|w_2)$，预测为w1，x为一个特征</li>
 </ul>
-<h4 id="后验"><a href="#后验" class="headerlink" title="后验"></a>后验</h4><p>贝叶斯公式$P(w_i|x)&#x3D;\frac{P(x|w_i)·P(w_i)}{P(x)}$</p>
-<p>概率公式$P(x)&#x3D;\sum_{i&#x3D;1}^{k}P(x|w_i)P(w_i)$</p>
+<h4 id="后验"><a href="#后验" class="headerlink" title="后验"></a>后验</h4><p>贝叶斯公式$P(w_i|x)=\frac{P(x|w_i)·P(w_i)}{P(x)}$</p>
+<p>概率公式$P(x)=\sum_{i=1}^{k}P(x|w_i)P(w_i)$</p>
 <p>可以看到后验和先验×似然度成正比<code>Posterior = likelihood×Prior</code></p>
 <h4 id="策略"><a href="#策略" class="headerlink" title="策略"></a>策略</h4><p>选择后验概率最高，意味着错误率最小，即有最小错误率分类</p>
 <ul>
@@ -560,15 +552,13 @@
 <li>在使用贝叶斯公式根据已知的先验和似然度来决策</li>
 <li>可以加上ln便于计算</li>
 </ul>
-<h3 id="2-1参数估计"><a href="#2-1参数估计" class="headerlink" title="2.1参数估计"></a>2.1参数估计</h3><h4 id="极大似然估计-一文搞懂极大似然估计-知乎-zhihu-com"><a href="#极大似然估计-一文搞懂极大似然估计-知乎-zhihu-com" class="headerlink" title="极大似然估计[一文搞懂极大似然估计 - 知乎 (zhihu.com)]"></a>极大似然估计[<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/26614750">一文搞懂极大似然估计 - 知乎 (zhihu.com)</a>]</h4><ul>
-<li><p>极大似然估计，通俗理解来说，<strong>就是利用已知的样本结果信息，反推最具有可能（最大概率）导致这些样本结果出现的模型参数值！</strong></p>
-</li>
+<h3 id="2-2参数估计"><a href="#2-2参数估计" class="headerlink" title="2.2参数估计"></a>2.2参数估计</h3><h4 id="极大似然估计-一文搞懂极大似然估计-知乎-zhihu-com"><a href="#极大似然估计-一文搞懂极大似然估计-知乎-zhihu-com" class="headerlink" title="极大似然估计[一文搞懂极大似然估计 - 知乎 (zhihu.com)]"></a>极大似然估计[<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/26614750">一文搞懂极大似然估计 - 知乎 (zhihu.com)</a>]</h4><ul>
+<li>极大似然估计，通俗理解来说，<strong>就是利用已知的样本结果信息，反推最具有可能（最大概率）导致这些样本结果出现的模型参数值！</strong></li>
 <li><p><strong>换句话说，极大似然估计提供了一种给定观察数据来评估模型参数的方法，即：“模型已定，参数未知”。</strong></p>
 </li>
 <li><p>对于分类器只能做参数估计，不能做模型估计，在参数估计中主要估计参数，模型是假定好的，比如假定是一个高斯模型，我们做的是估计高斯模型的一个参数，一个参数是$μ$一个是Σ，我们要估计的就是这两个参数。</p>
 </li>
-<li><p>似然函数$p(x|\theta)$：</p>
-<ul>
+<li>似然函数$p(x|\theta)$：<ul>
 <li>输入x为一个具体的数据，θ是模型的参数，</li>
 <li>如果θ是已知的，x是变量那么这个函数是一个概率函数，它描述对于不同的样本点x，其出现概率是多少。</li>
 <li>如果x是已知确定的， θ是变量，这个函数叫做似然函数(likelihood function), 它描述对于不同的模型参数，出现 x 这个样本点的概率是多少。</li>
@@ -580,11 +570,15 @@
 <p><strong>很多人马上就有答案了：70%。而其后的理论支撑是什么呢？</strong></p>
 <p>我们假设罐中白球的比例是p，那么黑球的比例就是1-p。因为每抽一个球出来，在记录颜色之后，我们把抽出的球放回了罐中并摇匀，<strong>所以每次抽出来的球的颜 色服从同一独立分布。</strong></p>
 <p>这里我们把一次抽出来球的颜色称为一次抽样。题目中在一百次抽样中，七十次是白球的,三十次为黑球事件的概率是P(样本结果|Model)。</p>
-<p>如果第一次抽象的结果记为x1,第二次抽样的结果记为x2….那么样本结果为(x1,x2…..,x100)。这样，我们可以得到如下表达式：<br>$$<br>p(x_1,x_2,…,x_{100}|Model)<br>\&#x3D;p(x_1|Model)p(x_2|Model)…p(x_{100}|Model)<br>\&#x3D;p^{70}(1-p)^{30}<br>$$<br>我们已经有了观察样本结果出现的概率表达式了。那么我们要求的模型的参数，也就是求的式中的p。那么我们怎么来求这个p呢？不同的p，直接导致P（样本结果|Model）的不同。</p>
+<p>如果第一次抽象的结果记为x1,第二次抽样的结果记为x2….那么样本结果为(x1,x2…..,x100)。这样，我们可以得到如下表达式：</p>
+<script type="math/tex; mode=display">
+p(x_1,x_2,...,x_{100}|Model)
+\\=p(x_1|Model)p(x_2|Model)...p(x_{100}|Model)
+\\=p^{70}(1-p)^{30}</script><p>我们已经有了观察样本结果出现的概率表达式了。那么我们要求的模型的参数，也就是求的式中的p。那么我们怎么来求这个p呢？不同的p，直接导致P（样本结果|Model）的不同。</p>
 <p><strong>极大似然估计应该按照什么原则去选取这个分布呢？</strong></p>
 <ul>
 <li><strong>采取的方法是让这个样本结果出现的可能性最大，也就是使得$p^{70} (1-p)^{30}$值最大，那么我们就可以看成是p的方程，求导即可！</strong></li>
-<li>求出p&#x3D;70</li>
+<li>求出p=70</li>
 </ul>
 <h4 id="MLE方法"><a href="#MLE方法" class="headerlink" title="MLE方法"></a>MLE方法</h4><ul>
 <li>MLE即Maximum Likelihood Estimation</li>
@@ -595,63 +589,63 @@
 </ul>
 </li>
 <li>就是说所有sample的概率乘起来最大，即似然函数<ul>
-<li>$P(D_c|\theta_c)&#x3D;\prod_{x\in D_c}P(x|\theta_c)$</li>
+<li>$P(D<em>c|\theta_c)=\prod</em>{x\in D_c}P(x|\theta_c)$</li>
 <li>其中Dc为c类样本组成的集合，参数θc对于数据集Dc的最大似然估计，就是寻找使得这个表达式最大的参数θ值。</li>
 </ul>
 </li>
 <li>假设我们模型是高斯模型，那么首先样本独立同分布<ul>
-<li>$p(w|w_i)&#x3D;p(x|w_i,\theta_i)$</li>
+<li>$p(x|w_i)=p(x|w_i,\theta_i)$</li>
 <li>likelihood服从高斯分布$p(x|w_i)$~$N(\mu_i,\Sigma_i)$</li>
-<li>似然函数$P(D|\theta)&#x3D;\prod_{k&#x3D;1}^np(x_k|\theta)$<ul>
-<li>$\theta&#x3D;(\theta_1,…,\theta_c)$</li>
+<li>似然函数$P(D|\theta)=\prod_{k=1}^np(x_k|\theta)$<ul>
+<li>$\theta=(\theta_1,…,\theta_c)$</li>
 <li>评估的θ需要最大化这个似然值</li>
 <li>乘法难以评估，求导困难，取log</li>
-<li>对于单个θ就是$P(D_c|\theta_c)&#x3D;\prod_{x\in D_c}P(x|\theta_c)$</li>
+<li>对于单个θ就是$P(D<em>c|\theta_c)=\prod</em>{x\in D_c}P(x|\theta_c)$</li>
 </ul>
 </li>
-<li>$l(\theta)&#x3D;lnP(D|\theta)&#x3D;\sum_{k&#x3D;1}^nln\ p(x_k|\theta)$</li>
-<li>最后所求$\theta^*&#x3D;{argmax}_{\theta}\ l(\theta)$</li>
-<li>$\nabla_{\theta}l(\theta)&#x3D;[\frac{\part}{\part \theta_1},…,\frac{\part}{\part \theta_c}]^T&#x3D;\sum_{k&#x3D;1}^n\nabla_{\theta}ln\ p(x_k|\theta)$</li>
+<li>$l(\theta)=lnP(D|\theta)=\sum_{k=1}^nln\ p(x_k|\theta)$</li>
+<li>最后所求$\theta^*={argmax}_{\theta}\ l(\theta)$</li>
+<li>$\nabla<em>{\theta}l(\theta)=[\frac{\part}{\part \theta_1},…,\frac{\part}{\part \theta_c}]^T=\sum</em>{k=1}^n\nabla_{\theta}ln\ p(x_k|\theta)$</li>
 <li>其中的$p(x_k|\theta)$是服从高斯分布的<ul>
 <li>Σ固定，评估θ<ul>
-<li>$P(x)&#x3D;-\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$</li>
-<li>$\mu&#x3D;x的均值$</li>
-<li>$\sigma^2&#x3D;x的方差$</li>
+<li>$P(x)=-\frac{1}{\sqrt{2\pi \sigma}}e^{-\frac{1}{2}(\frac{x-\mu}{\sigma})^2}$</li>
+<li>$\mu=x的均值$</li>
+<li>$\sigma^2=x的方差$</li>
 </ul>
 </li>
 <li>高维的高斯<ul>
-<li>$P(x)&#x3D;\frac{1}{(2\pi)^{\frac{d}{2}} |\Sigma|^\frac{1}{2}}exp[{-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)}]$</li>
+<li>$P(x)=\frac{1}{(2\pi)^{\frac{d}{2}} |\Sigma|^\frac{1}{2}}exp[{-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)}]$</li>
 <li>d是维度</li>
-<li>$\mu&#x3D;\frac{1}{|D_c|}\sum_{x\in D_c}x$</li>
-<li>$\Sigma&#x3D;\frac{1}{|D_c|}\sum_{x\in D_c}(x-\mu)(x-\mu)^T$</li>
+<li>$\mu=\frac{1}{|D<em>c|}\sum</em>{x\in D_c}x$</li>
+<li>$\Sigma=\frac{1}{|D<em>c|}\sum</em>{x\in D_c}(x-\mu)(x-\mu)^T$</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>令$\nabla_{\theta}l(\theta)&#x3D;0$</li>
+<li>令$\nabla_{\theta}l(\theta)=0$</li>
 </ul>
 </li>
 <li>【Example】固定Σ估计μ的高斯模型<ul>
 <li>$P(x|\mu)$~$N(\mu,\Sigma)$</li>
-<li>$ln\ p(x_k|\mu)&#x3D;-\frac{1}{2}ln[(2\pi)^d|\Sigma|]-\frac{1}{2}(x_k-\mu)^T\Sigma^{-1}(x_k-\mu)$</li>
+<li>$ln\ p(x_k|\mu)=-\frac{1}{2}ln[(2\pi)^d|\Sigma|]-\frac{1}{2}(x_k-\mu)^T\Sigma^{-1}(x_k-\mu)$</li>
 <li>对参数μ求导</li>
-<li>$\nabla_{\mu}ln\ p(x_k|\mu)&#x3D;\Sigma^{-1}(x_k-\mu)$</li>
-<li>则$\sum_{k&#x3D;1}^n\Sigma^{-1}(x_k-\mu)&#x3D;0$</li>
-<li>解出μ即可$\mu^*&#x3D;\frac{1}{n}\sum_{k&#x3D;1}^nx_k$</li>
+<li>$\nabla_{\mu}ln\ p(x_k|\mu)=\Sigma^{-1}(x_k-\mu)$</li>
+<li>则$\sum_{k=1}^n\Sigma^{-1}(x_k-\mu)=0$</li>
+<li>解出μ即可$\mu^*=\frac{1}{n}\sum_{k=1}^nx_k$</li>
 <li>可以看到这个μ其实就是sample的均值</li>
 </ul>
 </li>
 <li>【Example】估计μ、Σ的高斯模型<ul>
 <li>$P(x|\theta)$~$N(\mu,\sigma^2)$</li>
-<li>$ln\ p(x_k|\theta)&#x3D;-\frac{1}{2}ln(2\pi\sigma^2)-\frac{1}{2\sigma^2}(x_k-\mu)^2$</li>
+<li>$ln\ p(x_k|\theta)=-\frac{1}{2}ln(2\pi\sigma^2)-\frac{1}{2\sigma^2}(x_k-\mu)^2$</li>
 <li>对参数θ求导</li>
-<li>$\nabla_{\theta}ln\ p(x_k|\theta)&#x3D;\begin{bmatrix}\frac{\part ln\ p(x_k|\theta)}{\part\mu}\\frac{\part ln\ p(x_k|\theta)}{\part\sigma^2}\end{bmatrix}&#x3D;\begin{bmatrix}\frac{1}{\sigma^2}(x_k-\mu)\ -\frac{1}{2\sigma^2}+\frac{(x_k-\mu)^2}{2\sigma^4}\end{bmatrix}&#x3D;0$</li>
-<li>$\mu&#x3D;\frac{1}{n}\sum x_k$</li>
-<li>$\sigma^2&#x3D;\frac{1}{n}\sum(x_k-\mu)^2$</li>
-<li>令$\overline{X}&#x3D;[x_1-\mu,…,x_n-\mu]$</li>
+<li>$\nabla_{\theta}ln\ p(x_k|\theta)=\begin{bmatrix}\frac{\part ln\ p(x_k|\theta)}{\part\mu}\\frac{\part ln\ p(x_k|\theta)}{\part\sigma^2}\end{bmatrix}=\begin{bmatrix}\frac{1}{\sigma^2}(x_k-\mu)\ -\frac{1}{2\sigma^2}+\frac{(x_k-\mu)^2}{2\sigma^4}\end{bmatrix}=0$</li>
+<li>$\mu=\frac{1}{n}\sum x_k$</li>
+<li>$\sigma^2=\frac{1}{n}\sum(x_k-\mu)^2$</li>
+<li>令$\overline{X}=[x_1-\mu,…,x_n-\mu]$</li>
 <li>则一般形式如下<ul>
-<li>$\mu&#x3D;\frac{1}{n}\sum x_k$</li>
-<li>$\Sigma&#x3D;\frac{1}{n}\overline{X}\overline{X}^T$</li>
+<li>$\mu=\frac{1}{n}\sum x_k$</li>
+<li>$\Sigma=\frac{1}{n}\overline{X}\overline{X}^T$</li>
 </ul>
 </li>
 </ul>
@@ -663,7 +657,7 @@
 <ul>
 <li><p>在MLE中，$\theta_i$是可以计算出一个固定的值的</p>
 <ul>
-<li>极大似然估计是典型的频率学派观点，它的基本思想是：待估计参数 θ 是客观存在的，只是未知而已，当 $θ^{mle}$ 满足“ $θ&#x3D;θ^{mle}$ 时，该组观测样本 (X1,X2,…,Xn)&#x3D;(x1,x2,…,xn) 更容易被观测到“，我们就说 $θ^{mle}$ 是 θ 的极大似然估计值。也即，估计值 $θ^{mle}$ 使得事件发生的可能性最大。</li>
+<li>极大似然估计是典型的频率学派观点，它的基本思想是：待估计参数 θ 是客观存在的，只是未知而已，当 $θ^{mle}$ 满足“ $θ=θ^{mle}$ 时，该组观测样本 (X1,X2,…,Xn)=(x1,x2,…,xn) 更容易被观测到“，我们就说 $θ^{mle}$ 是 θ 的极大似然估计值。也即，估计值 $θ^{mle}$ 使得事件发生的可能性最大。</li>
 </ul>
 </li>
 <li><p>在BE中，$\theta_i$是一个随机的变量</p>
@@ -674,36 +668,44 @@
 </li>
 </ul>
 </li>
-<li><p>为了计算后验概率分布，我们首先看到贝叶斯公式$P(\theta|D)&#x3D;\frac{P(D|\theta)P(\theta)}{P(D)}$</p>
+<li><p>为了计算后验概率分布，我们首先看到贝叶斯公式$P(\theta|D)=\frac{P(D|\theta)P(\theta)}{P(D)}$</p>
 <ul>
 <li>那么有$P(\theta|D)与P(D|\theta)P(\theta)$成正比</li>
 <li>其中$P(\theta)$为参数服从分布，即先验知识</li>
-<li>$p(x|D)&#x3D;\int p(x,\theta|D)d\theta&#x3D;\int p(x|\theta,D)p(\theta|D)d\theta&#x3D;\int p(x|\theta)p(\theta|D)d\theta$</li>
-<li>为什么要求$p(x|D)$?后验密度</li>
+<li>$p(x|D)=\int p(x,\theta|D)d\theta=\int p(x|\theta,D)p(\theta|D)d\theta=\int p(x|\theta)p(\theta|D)d\theta$</li>
+<li>为什么要求$p(x|D)$?</li>
 </ul>
 </li>
-<li><p>【Example】未知μ的高斯分布<strong>generate出x的分布</strong></p>
-<ul>
+<li>【Example】未知μ的高斯分布<strong>generate出x的分布</strong><ul>
 <li>$p(x|\mu)$~$N(\mu,\sigma^2)$</li>
 <li>假设$p(u)$~$N(\mu_0,\sigma_0^2)$</li>
 <li>先求$p(\mu|D)$<ul>
-<li>$p(\mu|D)&#x3D;\frac{p(D|\mu)p(\mu)}{\int p(D|\mu)p(\mu)d\mu}&#x3D;\alpha\prod p(x_k|\mu)p(\mu)\&#x3D;\alpha’exp[-\frac{1}{2}(\sum(\frac{\mu-x_k}{\sigma})^2+(\frac{\mu-\mu_0}{\sigma_0})^2)]\&#x3D;\alpha’’exp[-\frac{1}{2}[(\frac{n}{\sigma^2}+\frac{1}{\sigma_0^2})\mu^2-2(\frac{1}{\sigma^2}\sum x_k+\frac{\mu_0}{\sigma_0^2})\mu]]$</li>
+<li>$p(\mu|D)=\frac{p(D|\mu)p(\mu)}{\int p(D|\mu)p(\mu)d\mu}=\alpha\prod p(x_k|\mu)p(\mu)\=\alpha’exp[-\frac{1}{2}(\sum(\frac{\mu-x_k}{\sigma})^2+(\frac{\mu-\mu_0}{\sigma_0})^2)]\=\alpha’’exp[-\frac{1}{2}[(\frac{n}{\sigma^2}+\frac{1}{\sigma_0^2})\mu^2-2(\frac{1}{\sigma^2}\sum x_k+\frac{\mu_0}{\sigma_0^2})\mu]]$</li>
 <li>这就求出了后验概率分布</li>
 <li>并且之前假设的<ul>
-<li>$\mu_n&#x3D;(\frac{n\sigma_0^2}{n\sigma_0^2+\sigma^2})\hat{x_n}+\frac{\sigma^2}{n\sigma_0^2+\sigma^2}\mu_0$</li>
-<li>$\sigma_n^2&#x3D;\frac{\sigma_0^2\sigma^2}{n\sigma_0^2+\sigma^2}$</li>
+<li>$\mu_n=(\frac{n\sigma_0^2}{n\sigma_0^2+\sigma^2})\hat{x_n}+\frac{\sigma^2}{n\sigma_0^2+\sigma^2}\mu_0$</li>
+<li>$\sigma_n^2=\frac{\sigma_0^2\sigma^2}{n\sigma_0^2+\sigma^2}$</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>再求$p(x|D)$后验密度即类条件概率密度<ul>
 <li>如上所述</li>
-<li>$p(x|D)&#x3D;\int p(x|\mu)p(\mu|D)d\mu\&#x3D;\frac{1}{2\pi \sigma \sigma_0}exp[-\frac{1}{2}\frac{(x-\mu_n)^2}{\sigma ^2+\sigma_0^2}]f(\sigma,\sigma_0)$</li>
-<li>其中$f(\sigma,\sigma_0)&#x3D;\int exp[-\frac{1}{2}\frac{\sigma^2+\sigma_0^2}{\sigma^2\sigma_0^2}(\mu-\frac{\sigma_n^2x+\sigma^2\mu_n}{\sigma^2+\sigma_n^2})^2]d\mu$</li>
+<li>$p(x|D)=\int p(x|\mu)p(\mu|D)d\mu\=\frac{1}{2\pi \sigma \sigma_0}exp[-\frac{1}{2}\frac{(x-\mu_n)^2}{\sigma ^2+\sigma_0^2}]f(\sigma,\sigma_0)$</li>
+<li>其中$f(\sigma,\sigma_0)=\int exp[-\frac{1}{2}\frac{\sigma^2+\sigma_0^2}{\sigma^2\sigma_0^2}(\mu-\frac{\sigma_n^2x+\sigma^2\mu_n}{\sigma^2+\sigma_n^2})^2]d\mu$</li>
 <li>得出结论为$p(x|D)$~$N(\mu_n,\sigma^2+\sigma_0^2)$</li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+<h4 id="MAP方法"><a href="#MAP方法" class="headerlink" title="MAP方法"></a>MAP方法</h4><ul>
+<li><p>密度估计(Density Estimation)</p>
+<p>怎么去给一个观测到的数据集估计出一个联合概率分布是比较常见的问题。比如说，给定一系列的观测值$X=(x_1,x_2,…,x_n)$ , 每一个观测值都彼此独立的情况下，密度估计要选择一个概率分布模型，以及选择对应的最能够表达出X的联合概率的参数。最常见的两种方法有MAP和MLE（最大似然估计）。两种方法都要求找到并且优化一个模型以及它的参数来表达已知观测值。</p>
+</li>
+<li><p>在MAP中，在已知的概率分布模型和参数下，我们希望能够最大化观测到数据的可能性:$P(X;\theta)=P(x_1,x_2,…,x_n;\theta)$ 所以我们要找到一组参数$\theta$，让上面的式子的结果最大。</p>
+</li>
+<li><p>那么我们只需要$max(P(X|\theta)P(\theta))$</p>
 </li>
 </ul>
 <h4 id="Discriminant-Functions-for-the-Normal-Density判别函数"><a href="#Discriminant-Functions-for-the-Normal-Density判别函数" class="headerlink" title="Discriminant Functions for the Normal Density判别函数"></a>Discriminant Functions for the Normal Density判别函数</h4><p>在分类器中，我们需要依据概率分类，而这个判断的一句就是根据判别函数获得的</p>
@@ -711,15 +713,15 @@
 <li>一般形式<ul>
 <li>假设有c个类$w_1,w_2,…,w_c$</li>
 <li>那么根据一个特征x，来查看$p(w_i|x)$的大小，取最大的为最后预测的类<ul>
-<li>即判别函数$g(x)&#x3D;p(w_i|x)$</li>
+<li>即判别函数$g(x)=p(w_i|x)$</li>
 </ul>
 </li>
 <li>由贝叶斯公式知，$p(w_i|x)$~$p(x|w_i)p(w_i)$<ul>
-<li>$g(x)&#x3D;p(x|w_i)p(w_i)$</li>
+<li>$g(x)=p(x|w_i)p(w_i)$</li>
 </ul>
 </li>
 <li>取对数<ul>
-<li>$g(x)&#x3D;ln\ p(x|w_i)+ln\ p(w_i)$</li>
+<li>$g(x)=ln\ p(x|w_i)+ln\ p(w_i)$</li>
 </ul>
 </li>
 </ul>
@@ -729,49 +731,49 @@
 </ul>
 </li>
 <li>【Example】高斯分布下的一般形式的g(x)<ul>
-<li>判别函数$g_i(x)&#x3D;ln\ p(x|w_i)+ln\ p(w_i)$</li>
-<li>$p(x|w_i)&#x3D;\frac{1}{(2\pi)^{\frac{d}{2}}|\Sigma_i|^\frac{1}{2}}exp[-\frac{1}{2}(x-\mu_i)^T\Sigma_i^{-1}(x-\mu_i)]$</li>
-<li>$g_i(x)&#x3D;-\frac{1}{2}(x-\mu_i)^T\Sigma_i^{-1}(x-\mu_i)-\frac{d}{2}ln\ 2\pi-\frac{1}{2}ln|\Sigma_i|+ln\ p(w_i)$<ul>
-<li>Case1：$\Sigma_i&#x3D;\sigma^2I$<ul>
-<li>$g_i(x)&#x3D;-\frac{(x-\mu_i)^T(x-\mu_i)}{2\sigma^2}+ln\ p(w_i)$</li>
-<li>$&#x3D;-\frac{1}{2\sigma^2}(x^Tx-2\mu_i^Tx+\mu_i^T\mu_i)+ln\ p(w_i)$</li>
-<li>因为$x^Tx$对于所有的class都是相等的，等价于$g(x)&#x3D;w_i^Tx+w_{i0}$<ul>
-<li>$w_i&#x3D;\frac{\mu_i}{\sigma^2}$</li>
-<li>$w_{i0}&#x3D;-\frac{\mu_i^T\mu_i}{2\sigma^2}+ln\ p(w_i)$</li>
+<li>判别函数$g_i(x)=ln\ p(x|w_i)+ln\ p(w_i)$</li>
+<li>$p(x|w_i)=\frac{1}{(2\pi)^{\frac{d}{2}}|\Sigma_i|^\frac{1}{2}}exp[-\frac{1}{2}(x-\mu_i)^T\Sigma_i^{-1}(x-\mu_i)]$</li>
+<li>$g_i(x)=-\frac{1}{2}(x-\mu_i)^T\Sigma_i^{-1}(x-\mu_i)-\frac{d}{2}ln\ 2\pi-\frac{1}{2}ln|\Sigma_i|+ln\ p(w_i)$<ul>
+<li>Case1：$\Sigma_i=\sigma^2I$<ul>
+<li>$g_i(x)=-\frac{(x-\mu_i)^T(x-\mu_i)}{2\sigma^2}+ln\ p(w_i)$</li>
+<li>$=-\frac{1}{2\sigma^2}(x^Tx-2\mu_i^Tx+\mu_i^T\mu_i)+ln\ p(w_i)$</li>
+<li>因为$x^Tx$对于所有的class都是相等的，等价于$g(x)=w<em>i^Tx+w</em>{i0}$<ul>
+<li>$w_i=\frac{\mu_i}{\sigma^2}$</li>
+<li>$w_{i0}=-\frac{\mu_i^T\mu_i}{2\sigma^2}+ln\ p(w_i)$</li>
 </ul>
 </li>
 <li>这是一个线性的函数</li>
 <li>最后来查看两个类的输出相等的情况<ul>
-<li>$g_i(x)&#x3D;g_j(x)$</li>
-<li>$0&#x3D;(\frac{\mu_i-\mu_j}{\sigma^2})^Tx-\frac{\mu_i^T\mu_i-\mu_j^T\mu_j}{2\sigma^2}+ln\frac{p(w_i)}{p(w_j)}$</li>
-<li>假设$p(w_i)&#x3D;p(w_j)$</li>
-<li>$x_0&#x3D;\frac{1}{2}(\mu_i+\mu_j)$</li>
+<li>$g_i(x)=g_j(x)$</li>
+<li>$0=(\frac{\mu_i-\mu_j}{\sigma^2})^Tx-\frac{\mu_i^T\mu_i-\mu_j^T\mu_j}{2\sigma^2}+ln\frac{p(w_i)}{p(w_j)}$</li>
+<li>假设$p(w_i)=p(w_j)$</li>
+<li>$x_0=\frac{1}{2}(\mu_i+\mu_j)$</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Case2：$\Sigma_i&#x3D;\Sigma$<ul>
-<li>$g(x)&#x3D;-\frac{1}{2}(x^T\Sigma^{-1}x-2\mu_i^T\Sigma^{-1}x+\mu_i^T\Sigma^{-1}\mu_i)+ln\ p(w_i)$</li>
-<li>因为$x^T\Sigma^{-1}x$对所有的类都是一样的，等价于$g_i(x)&#x3D;\mu_i^T\Sigma^{-1}x-\frac{1}{2}\mu_i^T\Sigma^{-1}\mu_i+ln\ p(w_i)$<ul>
-<li>$g_i(x)&#x3D;w_i^Tx+w_{i0}$</li>
+<li>Case2：$\Sigma_i=\Sigma$<ul>
+<li>$g(x)=-\frac{1}{2}(x^T\Sigma^{-1}x-2\mu_i^T\Sigma^{-1}x+\mu_i^T\Sigma^{-1}\mu_i)+ln\ p(w_i)$</li>
+<li>因为$x^T\Sigma^{-1}x$对所有的类都是一样的，等价于$g_i(x)=\mu_i^T\Sigma^{-1}x-\frac{1}{2}\mu_i^T\Sigma^{-1}\mu_i+ln\ p(w_i)$<ul>
+<li>$g<em>i(x)=w_i^Tx+w</em>{i0}$</li>
 </ul>
 </li>
 <li>分界线<ul>
-<li>$g_i(x)&#x3D;g_j(x)$</li>
-<li>$0&#x3D;(\mu_i-\mu_j)^T\Sigma^{-1}x-\frac{\mu_i^T\Sigma^{-1}\mu_i-\mu_j^T\Sigma^{-1}\mu_j}{2}+ln\ \frac{p(w_i)}{p(w_j)}$</li>
+<li>$g_i(x)=g_j(x)$</li>
+<li>$0=(\mu_i-\mu_j)^T\Sigma^{-1}x-\frac{\mu_i^T\Sigma^{-1}\mu_i-\mu_j^T\Sigma^{-1}\mu_j}{2}+ln\ \frac{p(w_i)}{p(w_j)}$</li>
 </ul>
 </li>
 <li>参数估计<ul>
-<li>$\mu_i&#x3D;\frac{1}{N_i}\sum_{j\in w_i}x_j$</li>
-<li>$P(w_i)&#x3D;\frac{N_i}{N}$</li>
-<li>$\Sigma&#x3D;\sum_{i&#x3D;1}^c\sum_{j\in w_i}\frac{(x_j-\mu_i)(x_j-u_i)^T}{N_i}$</li>
+<li>$\mu<em>i=\frac{1}{N_i}\sum</em>{j\in w_i}x_j$</li>
+<li>$P(w_i)=\frac{N_i}{N}$</li>
+<li>$\Sigma=\sum<em>{i=1}^c\sum</em>{j\in w_i}\frac{(x_j-\mu_i)(x_j-u_i)^T}{N_i}$</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>Case3：$\Sigma_i&#x3D;Arbitrary$<ul>
-<li>$g_i(x)&#x3D;-\frac{1}{2}(x^T\Sigma_i^{-1}x-2\mu_i^T\Sigma_i^{-1}x+\mu_i^T\Sigma_i^{-1}\mu_i)-\frac{1}{2}ln\ |\Sigma_i|+ln\ P(w_i)$</li>
-<li>$g_i(x)&#x3D;x^TW_ix+w_i^Tx+w_{i0}$</li>
+<li>Case3：$\Sigma_i=Arbitrary$<ul>
+<li>$g_i(x)=-\frac{1}{2}(x^T\Sigma_i^{-1}x-2\mu_i^T\Sigma_i^{-1}x+\mu_i^T\Sigma_i^{-1}\mu_i)-\frac{1}{2}ln\ |\Sigma_i|+ln\ P(w_i)$</li>
+<li>$g<em>i(x)=x^TW_ix+w_i^Tx+w</em>{i0}$</li>
 </ul>
 </li>
 </ul>
@@ -779,46 +781,340 @@
 </ul>
 </li>
 </ul>
-<h4 id="Naive-Bayes-Classifier朴素贝叶斯"><a href="#Naive-Bayes-Classifier朴素贝叶斯" class="headerlink" title="Naive Bayes Classifier朴素贝叶斯"></a>Naive Bayes Classifier朴素贝叶斯</h4><p>给出$x&#x3D;(x_1,x_2,…,x_p)^T$</p>
+<h3 id="2-3-Naive-Bayes-Classifier朴素贝叶斯"><a href="#2-3-Naive-Bayes-Classifier朴素贝叶斯" class="headerlink" title="2.3 Naive Bayes Classifier朴素贝叶斯"></a>2.3 Naive Bayes Classifier朴素贝叶斯</h3><p>给出$x=(x_1,x_2,…,x_p)^T$</p>
 <ul>
 <li><p>给出一系列特征，我们希望找到这些特征最可能出现的类</p>
 </li>
-<li><p>即$P(w|x)&#x3D;P(w|x_1,…,x_p)$</p>
+<li><p>即$P(w|x)=P(w|x_1,…,x_p)$</p>
 <ul>
 <li>又$P(w|x)$~$P(x_1,…,x_p|w)P(w)$</li>
-<li>$P(x_1,…,x_p|w)&#x3D;P(x_1|w)…P(x_p|w)$</li>
+<li><strong>特征独立</strong></li>
+<li>$P(x_1,…,x_p|w)=P(x_1|w)…P(x_p|w)$</li>
 <li>那么我们只需要找到最大的概率进行预测即可</li>
 </ul>
 </li>
 <li><p>【Example】</p>
 <ul>
-<li><img src="/undefined/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/Blog\source\_posts\undefined\机器学习\image-20220915095523325.png" alt="image-20220915095523325" style="zoom:50%;">
+<li><p><img src="/Learning/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/Datas\TyporaImg\image-20220915095523325.png" alt="image-20220915095523325" style="zoom:50%;"></p>
 </li>
-<li><p>现在我们给出一个记录X&#x3D;(Refund&#x3D;No,Married,Income&#x3D;120K)，使用朴素贝叶斯预测其类别</p>
+<li><p>现在我们给出一个记录X=(Refund=No,Married,Income=120K)，使用朴素贝叶斯预测其类别</p>
 </li>
 <li><p>首先，类别只有两个：Yes，No</p>
 <ul>
-<li><p>$P(w_k)&#x3D;\frac{N_k}{N}$每个类别的先验概率</p>
+<li><p>$P(w_k)=\frac{N_k}{N}$每个类别的先验概率</p>
 <ul>
-<li>$P(NO)&#x3D;\frac{7}{10}$</li>
-<li>$P(YES)&#x3D;\frac{3}{10}$</li>
+<li>$P(NO)=\frac{7}{10}$</li>
+<li>$P(YES)=\frac{3}{10}$</li>
 </ul>
 </li>
-<li><p>$P(x_i|w_k)&#x3D;\frac{|x_i|}{N_k}$每个类别中特征出现的概率</p>
+<li><p>$P(x_i|w_k)=\frac{|x_i|}{N_k}$每个类别中特征出现的概率</p>
 <ul>
-<li><p>$$<br>P(Refund&#x3D;YES|NO)&#x3D;\frac{3}{7}\P(Refund&#x3D;NO|NO)&#x3D;\frac{4}{7}\P(Refund&#x3D;YES|YES)&#x3D;0\P(Refund&#x3D;NO|YES)&#x3D;1<br>$$</p>
-</li>
+<li><script type="math/tex; mode=display">
+P(Refund=YES|NO)=\frac{3}{7}\\
+P(Refund=NO|NO)=\frac{4}{7}\\
+P(Refund=YES|YES)=0\\
+P(Refund=NO|YES)=1</script></li>
 <li></li>
-<li><p>$$<br>P(Married|YES)&#x3D;0\P(Divorced|YES)&#x3D;\frac{1}{3}\P(Single|YES)&#x3D;\frac{2}{3}\<br>P(Married|NO)&#x3D;\frac{4}{7}\P(Divorced|YES)&#x3D;\frac{1}{7}\P(Single|YES)&#x3D;\frac{2}{7}\<br>$$</p>
-</li>
+<li><script type="math/tex; mode=display">
+P(Married|YES)=0\\
+P(Divorced|YES)=\frac{1}{3}\\
+P(Single|YES)=\frac{2}{3}\\
+
+P(Married|NO)=\frac{4}{7}\\
+P(Divorced|YES)=\frac{1}{7}\\
+P(Single|YES)=\frac{2}{7}\\</script></li>
 <li><p>工资是高斯分布的，我们首先估计参数</p>
 <ul>
 <li>$P(x|w_i)$~$N(\mu,\sigma^2)$</li>
-<li>$\mu&#x3D;\frac{1}{n_x}\sum x_i&#x3D;$</li>
-<li>$\sigma^2&#x3D;\frac{1}{n_x}\sum(x_i-\mu)^2$</li>
+<li>$\mu=\frac{1}{n_x}\sum x_i=110$</li>
+<li>$\sigma^2=\frac{1}{n_x}\sum(x_i-\mu)^2=2975$</li>
 </ul>
 </li>
-<li></li>
+<li><p>$P(X|NO)=P(x_1|NO)P(x_2|NO)P(x_3|NO)=0.0024$</p>
+</li>
+<li><p>$P(X|YES)=0$</p>
+</li>
+<li><p>$P(X|NO)P(NO)&gt;P(X|YES)P(YES)$</p>
+</li>
+<li><p>Class=NO</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Laplace smoothing</p>
+<ul>
+<li>$P(x<em>i|w_k)=\frac{|x</em>{ik}|+1}{N_{w_k}+K}$</li>
+</ul>
+</li>
+</ul>
+<h2 id="Lecture-3"><a href="#Lecture-3" class="headerlink" title="Lecture 3"></a>Lecture 3</h2><h3 id="3-1-Linear-Method-for-Regression"><a href="#3-1-Linear-Method-for-Regression" class="headerlink" title="3.1 Linear  Method for Regression"></a>3.1 Linear  Method for Regression</h3><h4 id="Linear-Model"><a href="#Linear-Model" class="headerlink" title="Linear Model"></a>Linear Model</h4><ul>
+<li><p>目标是学习一个从输入x到输出y的一个映射</p>
+<ul>
+<li>y是离散的，分类</li>
+<li>y是实数值，回归</li>
+</ul>
+</li>
+<li><p>【Example】</p>
+<ul>
+<li>设$x\in R^d,x=[x_1,…,x_d]^T$</li>
+<li>参数$w=[w_1,…,w_d]^T\in R^d,b$</li>
+<li>那么我们可以写出方程$f(x)=w^Tx+b$<ul>
+<li>进一步令$x=[x_1,..,x_d,1]^T$</li>
+<li>$w=[w_1,…,w_d,b]^T$</li>
+</ul>
+</li>
+<li>$f(x)=w^Tx$</li>
+</ul>
+</li>
+</ul>
+<h4 id="Polynomial-Curve-Fitting"><a href="#Polynomial-Curve-Fitting" class="headerlink" title="Polynomial Curve Fitting"></a>Polynomial Curve Fitting</h4><ul>
+<li>用多项式拟合数据参数为$a=(a_0,a_1,…,a_m)$<ul>
+<li>$f(x,a)=a_0+a_1x_1+…+a_mx^m$</li>
+</ul>
+</li>
+<li>Zero Order Polynomial<ul>
+<li>是一个constant</li>
+<li>其实就是均值</li>
+</ul>
+</li>
+<li>First Order Polynomial<ul>
+<li>用一条直线拟合</li>
+</ul>
+</li>
+<li>Third Order Polynomial<ul>
+<li>用三次函数的拟合</li>
+</ul>
+</li>
+<li>次数越高越复杂，精度高，容易过拟合</li>
+</ul>
+<h4 id="MSE-Criterion均方误差判据"><a href="#MSE-Criterion均方误差判据" class="headerlink" title="MSE Criterion均方误差判据"></a>MSE Criterion均方误差判据</h4><ul>
+<li>考察一个函数拟合是否好，我们用误差函数来判断<ul>
+<li>需要拟合的训练数据为$(x_1,y_1),…,(x_n,y_n)$</li>
+<li>学习到的函数为$f(x,a)$</li>
+</ul>
+</li>
+<li>$MSE(a)=\frac{1}{n}\sum_{i=1}^n(y_i-f(x_i,a))^2$</li>
+<li>最小化MSE，即最小化标签$y_i$和输出预期$f(x_i)$方差，这里的f被参数a决定<ul>
+<li>$J<em>n(a)=\sum</em>{i=1}^n(y_i-a^Tx_i)^2$</li>
+<li>最小化$a^Tx_i$和$y_i$的均方误差</li>
+<li>使用矩阵表示<ul>
+<li>$X=[x_1,x_2,…,x_n]$</li>
+<li>$y=[y_1,y_2,…,y_n]^T$</li>
+<li>$J_n(a)=(y-X^Ta)^T(y-X^Ta)$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-2Linear-Regression-Model"><a href="#3-2Linear-Regression-Model" class="headerlink" title="3.2Linear Regression Model"></a>3.2Linear Regression Model</h3><ul>
+<li>训练数据为$(x_i,y_i)$，标签为$y_i$</li>
+<li>学得的模型为$f(x)=a<em>0+\sum</em>{i=1}^pa_ix_i=a_0+a^Tx$</li>
+<li>$a=[a_1,…,a_p]^T,x$为特征向量</li>
+<li>接下来我们要最小化误差<ul>
+<li>MSE均方误差<ul>
+<li>$J<em>n=\frac{1}{n}\sum</em>{i=1}^n(y_i-f(x_i))^2$</li>
+</ul>
+</li>
+<li>RSS残差平方和<ul>
+<li>$RSS(f)=\sum_{i=1}^n(y_i-f(x_i))^2$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>以MSE均方误差为例，如何最小化？<ul>
+<li>使用矩阵表示<ul>
+<li>$X=[x_1,x_2,…,x_n]$</li>
+<li>$y=[y_1,y_2,…,y_n]^T$</li>
+<li>$J_n(a)=(y-X^Ta)^T(y-X^Ta)$</li>
+<li>对a求导<ul>
+<li>$\frac{dAX}{dX}=A^T$</li>
+<li>$\frac{dx^Tx}{dx}=2x$</li>
+</ul>
+</li>
+<li>$\nabla J_n=-2X(y-X^Ta)$</li>
+<li>$a=(XX^T)^{-1}Xy$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>则我们就求出了使得MSE最小化的a<ul>
+<li>$\hat y=X^Ta=X^T(XX^T)^{-1}Xy$</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-3-Statistical-Model-of-Regression"><a href="#3-3-Statistical-Model-of-Regression" class="headerlink" title="3.3 Statistical Model of Regression"></a>3.3 Statistical Model of Regression</h3><ul>
+<li>生成的模型：$y=f(x,a)+\epsilon$<ul>
+<li>$f(x,a)$是一个确定性函数</li>
+<li>$\epsilon$是一个随机的噪声，它可以有一个概率分布，比如$\epsilon$~$N(0,\sigma^2)$</li>
+</ul>
+</li>
+<li>【Example】<ul>
+<li>$y=f(x,a)+\epsilon$</li>
+<li>$\epsilon$~$N(0,\sigma^2)$</li>
+<li>给定$a,X,\sigma$的条件下，输出y的概率</li>
+<li>即$y-f(x,a)$的概率，因为$f(x,a)$是给定的</li>
+<li>$p(y|x,a,\sigma)=\frac{1}{\sigma \sqrt{2\pi}}exp[-\frac{1}{2\sigma^2}(y-f(x,a))^2]$</li>
+<li>接下来使用最大似然估计MLE求a</li>
+<li>$L(D,a,\sigma)=\prod_{i=1}^n p(y_i|x_1,a,\sigma)$</li>
+<li>$a^*=argmax\prod_{i=1}^np(y_i|x_i,a,\sigma)$</li>
+<li>使用对数似然函数</li>
+<li>$l(D,a,\sigma)=log(L(D,a,\sigma))=log\prod p(y<em>i|x_i,a,\sigma)=\sum</em>{i=1}^nlog\ p(y_i|x_i,a,\sigma)$</li>
+<li>$l(D,a,\sigma)=-\frac{1}{2\sigma^2}\sum_{i=1}^n(y_i-f(x_i,a))^2+c(\sigma)$</li>
+<li>到最后还是最小化$RSS(f)$</li>
+</ul>
+</li>
+</ul>
+<h4 id="Overfitting"><a href="#Overfitting" class="headerlink" title="Overfitting"></a>Overfitting</h4><ul>
+<li>model不能过于简单也不能过于复杂，即参数的复杂度<ul>
+<li>过简单，欠拟合，在训练集上就表现不好</li>
+<li>过复杂，过拟合，在训练集上良好，在测试集上表现差</li>
+<li>我们可以对参数的限制放入损失函数中，作为正则函数项</li>
+</ul>
+</li>
+</ul>
+<h4 id="Ridge-Regression"><a href="#Ridge-Regression" class="headerlink" title="Ridge Regression"></a>Ridge Regression</h4><ul>
+<li>使用损失函数+正则项</li>
+<li>$a^*=argmin<em>{a}\sum</em>{i=1}^n(y<em>i-x_i^Ta)^2+\lambda\sum</em>{j=1}^p a_j^2$</li>
+<li>需要挑选合适的$\lambda$</li>
+<li>等价形式<ul>
+<li>$a^*=argmin_{a}\sum(y_i-x_i^Ta)^2$</li>
+<li>Subject to $\sum_{i=1}^n a_j^2≤t$</li>
+</ul>
+</li>
+<li><p>L2正则化</p>
+<ul>
+<li>$C=C_0+\frac{\lambda}{2n}\sum_ww^2$</li>
+</ul>
+</li>
+<li><p>L1正则化</p>
+<ul>
+<li>$C=C_0+\frac{\lambda}{n}\sum|w|$</li>
+<li>L1比L2更加sparse</li>
+</ul>
+</li>
+<li>求解以$a^*=argmin<em>{a}\sum</em>{i=1}^n(y<em>i-x_i^Ta)^2+\lambda\sum</em>{j=1}^p a_j^2$为例<ul>
+<li>矩阵表示$(y-X^Ta)^T(y-X^Ta)+\lambda a^Ta$</li>
+<li>求导$-2X(y-X^Ta)+2\lambda a$</li>
+<li>求解$a^*=(XX^T+\lambda I)^{-1}Xy$</li>
+</ul>
+</li>
+</ul>
+<h4 id="Bayesian-Linear-Regression"><a href="#Bayesian-Linear-Regression" class="headerlink" title="Bayesian Linear Regression"></a>Bayesian Linear Regression</h4><ul>
+<li>$P(a|D)=\frac{P(D|a)P(a)}{P(D)}$</li>
+<li>假设a是高斯分布<ul>
+<li>$p(a)=N(a|0,\lambda^{-1}I)$</li>
+<li>$ln(p(a))=-\frac{\lambda}{2}a^Ta+c$</li>
+<li>那么计算Posterior时我们可以先计算出likelihood<ul>
+<li>$l(D,a,\sigma)=-\frac{1}{2\sigma^2}\sum_{i=1}^n(y_i-f(x_i,a))^2+c(\sigma)$</li>
+<li>$ln(p(a))=-\frac{\lambda}{2}a^Ta+c$</li>
+</ul>
+</li>
+<li>那么后验是正比于likelihood×prior的，在log下就是相加</li>
+<li>相当于多了一个正则项</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-3-LASSO"><a href="#3-3-LASSO" class="headerlink" title="3.3 LASSO"></a>3.3 LASSO</h3><ul>
+<li>Least Absolute Selection and Shrinkage Operator</li>
+<li>$\hat \beta=argmin\frac{1}{2n}\sum (y_i-x_i^T\beta)^2$<ul>
+<li>subject to $\sum_{j=1}^p|\beta_j|≤t$【L1】</li>
+<li>subject to $\sum_{j=1}^p\beta_j^2≤t$【L2】</li>
+</ul>
+</li>
+<li><img src="/Learning/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/Datas\TyporaImg\image-20220920112506418.png" alt="image-20220920112506418"></li>
+</ul>
+<h4 id="LASSO-Solution"><a href="#LASSO-Solution" class="headerlink" title="LASSO Solution"></a>LASSO Solution</h4><ul>
+<li>$\hat \beta=argmin\frac{1}{2n}\sum (y_i-z_i\beta)^2$</li>
+<li>这里的z是x经过归一化的，y也是归一化的<ul>
+<li>$\sum y_i=0$</li>
+<li>$\sum z_i=0$</li>
+<li>$\frac{1}{n}\sum<em>iz</em>{ij}^2=1$</li>
+</ul>
+</li>
+<li>$f(\beta)=\frac{1}{2n}(y-\beta z)^T(y-\beta z)+\lambda|\beta|$</li>
+<li>$f(\beta)=\frac{1}{2n}z^Tz\beta^2-\frac{1}{n}<z,y>\beta+\frac{1}{2n}y^Ty+\lambda |\beta|$</z,y></li>
+<li>$2<z,y>=y^Tz+z^Ty$</z,y></li>
+<li>且$\hat \beta=argmin\frac{1}{2n}\sum (y_i-x_i^T\beta)^2$</li>
+<li>去除与$\beta$无关项，$f(\beta)=\frac{1}{2}\beta^2-\frac{1}{n}<z,y>\beta+\lambda |\beta|$</z,y></li>
+<li><script type="math/tex; mode=display">f(\beta)= \begin{cases} \frac{1}{2}\beta^2-(\frac{1}{n}<z,y>-\lambda)\beta,\quad \beta\geq 0\\ \frac{1}{2}\beta^2-(\frac{1}{n}<z,y>+\lambda)\beta, \quad \beta\lt 0 \end{cases} \tag{1}</script></li>
+<li>$\beta^*=\begin{cases}\frac{1}{n}<z,y>-\lambda,\quad \frac{1}{n}<z,y>\gt \lambda\ 0,\quad|\frac{1}{n}<z,y>|\leq\lambda\\frac{1}{n}<z,y>+\lambda,\quad \frac{1}{n}<z,y>&lt;-\lambda\end{cases}$</z,y></z,y></z,y></z,y></z,y></li>
+</ul>
+<h3 id="3-4-Model-Assessment-and-Selection"><a href="#3-4-Model-Assessment-and-Selection" class="headerlink" title="3.4 Model Assessment and Selection"></a>3.4 Model Assessment and Selection</h3><ul>
+<li>模型的评估和模型的选择：<ul>
+<li>泛化性、准确度</li>
+<li>在新的data上测试集上进行测试</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-5-Bias-variance-Decomposition"><a href="#3-5-Bias-variance-Decomposition" class="headerlink" title="3.5 Bias-variance Decomposition"></a>3.5 Bias-variance Decomposition</h3><ul>
+<li>偏差-方差分解(Bias-Variance Decomposition)是统计学派看待模型复杂度的观点。Bias-variance分解是机器学习中一种重要的分析技术。给定学习目标和训练集规模，它可以把一种学习算法的期望误差分解为三个非负项的和，即样本真实噪音noise、bias和 variance。</li>
+<li>noise 样本真实噪音是任何学习算法在该学习目标上的期望误差的下界；( 任何方法都克服不了的误差)</li>
+<li>bias 度量了某种学习算法的平均估计结果所能逼近学习目标的程度；（独立于训练样本的误差，刻画了匹配的准确性和质量：一个高的偏差意味着一个坏的匹配）</li>
+<li>variance 则度量了在面对同样规模的不同训练集时，学习算法的估计结果发生变动的程度。（相关于观测样本的误差，刻画了一个学习算法的精确性和特定性：一个高的方差意味着一个不稳定的匹配）。</li>
+</ul>
+<p>【Example】</p>
+<ul>
+<li>给出标签数据$(x_i,y_i)$</li>
+<li>学到一个函数$f(x)=y$</li>
+<li>Loss：$L(y,f(x))$</li>
+<li>期望误差：<ul>
+<li>$E(L)=\int\int L(y,f(x))p(x,y)dxdy$</li>
+</ul>
+</li>
+<li>若将平方误差用于Loss<ul>
+<li>$L(y,f(x))=(y-f(x))^2$</li>
+<li>获得EPE（Expected Prediction Error）<ul>
+<li>$EPE(f)=\int \int (y-f(x))^2p(x,y)dxdy$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>那么我们获得了平方误差下的期望误差即EPE<ul>
+<li>又$(y-f(x))^2=(y-E(y|x)+E(y|x)-f(x))^2$</li>
+<li>$=(y-E(y|x))^2+(E(y|x)-f(x))^2+2(y-E(y|x))(E(y|x)-f(x))$<strong>&lt;*&gt;</strong></li>
+<li>则$\int\int (y-E(y|x))^2p(x,y)dxdy=\int_x\int_y(y-E(y|x))^2p(y|x)\ dy\ p(x)dx=\int_xvar(y|x)p(x)dx$<ul>
+<li>运用公式<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e4c0a6db8a86">01 条件期望与条件方差 - 简书 (jianshu.com)</a>：<ul>
+<li>$E(y|x)=\int y\ p(y|x)dy$</li>
+<li>$var(y|x)=\int (y-E(y|x))p(y|x)dy$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>则$\int \int (E(y|x)-f(x))^2p(x,y)dxdy=\int_yp(y|x)dy\int_x(E(y|x)-f(x))^2p(x)dx=\int(E(y|x)-f(x))^2p(x)dx$<ul>
+<li>运用公式<ul>
+<li>$\int p(y|x)dy=1$ </li>
+<li>$E(y|x)$与y无关</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>则$\int \int (y-E(y|x))(E(y|x)-f(x))p(x,y)dxdy=0$<ul>
+<li>$\int \int yE(y|x)p(x,y)dxdy=\int_x\int_yy\ p(y|x)dy\ E(y|x)p(x)dx=\int_xE(y|x)^2p(x)dx$</li>
+<li>$\int \int yf(x)p(x,y)dxdy$</li>
+<li>$\int \int E(y|x)^2p(x,y)dxdy=\int_yp(y|x)dy\int_xE(y|x)^2p(x)dx=\int_xE(y|x)^2p(x)dx$</li>
+<li>$\int\int E(y|x)f(x)p(x,y)dxdy=\int_yp(y|x)dy\int _xE(y|x)f(x)p(x)dx=\int_x\int_yy\ p(y|x)dyf(x)p(x)dx=\int \int yf(x)p(x,y)dxdy$</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>$EPE(f)=\int(E(y|x)-f(x))^2p(x)dx+\int var(y|x)p(x)dx$</li>
+<li>在实际中，往往会给数据集D<ul>
+<li>$f(x)=f(x;D)$</li>
+<li>$EPE(f)=\int(f(x;D)-E(y|x))^2p(x)dx+\int var(y|x)p(x)dx$</li>
+<li>其中的$(f(x;D)-E(y|x))^2$可以如上一样分解<ul>
+<li>$(f(x;D)-E(y|x))^2=E_D{[f(x;D)-E_D(f(x;D))]^2}+{E_D(f(x;D))-E(y|x)}^2$</li>
+</ul>
+</li>
+<li>$bias^2=\int{E_D(f(x;D))-E(y|x)}^2p(x)dx$</li>
+<li>$variance=\int E_D{[f(x;D)-E_D(f(x;D))]^2}p(x)dx$</li>
+<li>$noise=\int var(y|x)p(x)dx$</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -883,7 +1179,7 @@
       </a>
     </li>
     <li class="social-share-li">
-      <a target="_blank" class="social-share-icon" href="mailto:?subject=机器学习&body=Hi,I found this website and thought you might like it http://Hualingz.cn/undefined/机器学习/">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=机器学习&body=Hi,I found this website and thought you might like it http://Hualingz.cn/Learning/机器学习/">
         <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
       </a>
     </li>
@@ -971,7 +1267,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">目录</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">机器学习</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Lecture-1"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">Lecture 1</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-1%E5%88%86%E6%95%B0%E7%BB%84%E6%88%90"><span class="toc-nav-number">1.1.1.</span> <span class="toc-nav-text">1.1分数组成</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-2%E5%AF%BC%E8%AE%BA"><span class="toc-nav-number">1.1.2.</span> <span class="toc-nav-text">1.2导论</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-3%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-nav-number">1.1.3.</span> <span class="toc-nav-text">1.3监督学习</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-4%E9%9D%9E%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-nav-number">1.1.4.</span> <span class="toc-nav-text">1.4非监督学习</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-5%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0"><span class="toc-nav-number">1.1.5.</span> <span class="toc-nav-text">1.5强化学习</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Lecture-2"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Lecture 2</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2-1%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-nav-number">1.2.1.</span> <span class="toc-nav-text">2.1监督学习</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E5%85%88%E9%AA%8C"><span class="toc-nav-number">1.2.1.1.</span> <span class="toc-nav-text">先验</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E4%BC%BC%E7%84%B6%E5%BA%A6"><span class="toc-nav-number">1.2.1.2.</span> <span class="toc-nav-text">似然度</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E5%90%8E%E9%AA%8C"><span class="toc-nav-number">1.2.1.3.</span> <span class="toc-nav-text">后验</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E7%AD%96%E7%95%A5"><span class="toc-nav-number">1.2.1.4.</span> <span class="toc-nav-text">策略</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2-1%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1"><span class="toc-nav-number">1.2.2.</span> <span class="toc-nav-text">2.1参数估计</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1-%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1-%E7%9F%A5%E4%B9%8E-zhihu-com"><span class="toc-nav-number">1.2.2.1.</span> <span class="toc-nav-text">极大似然估计[一文搞懂极大似然估计 - 知乎 (zhihu.com)]</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#MLE%E6%96%B9%E6%B3%95"><span class="toc-nav-number">1.2.2.2.</span> <span class="toc-nav-text">MLE方法</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#BE%E6%96%B9%E6%B3%95-%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%B0%E8%AE%A1-%E7%9F%A5%E4%B9%8E-zhihu-com"><span class="toc-nav-number">1.2.2.3.</span> <span class="toc-nav-text">BE方法[贝叶斯估计 - 知乎 (zhihu.com)]</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Discriminant-Functions-for-the-Normal-Density%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0"><span class="toc-nav-number">1.2.2.4.</span> <span class="toc-nav-text">Discriminant Functions for the Normal Density判别函数</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Naive-Bayes-Classifier%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF"><span class="toc-nav-number">1.2.2.5.</span> <span class="toc-nav-text">Naive Bayes Classifier朴素贝叶斯</span></a></li></ol></li></ol></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">机器学习</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Lecture-1"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">Lecture 1</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-1%E5%88%86%E6%95%B0%E7%BB%84%E6%88%90"><span class="toc-nav-number">1.1.1.</span> <span class="toc-nav-text">1.1分数组成</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-2%E5%AF%BC%E8%AE%BA"><span class="toc-nav-number">1.1.2.</span> <span class="toc-nav-text">1.2导论</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-3%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-nav-number">1.1.3.</span> <span class="toc-nav-text">1.3监督学习</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-4%E9%9D%9E%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-nav-number">1.1.4.</span> <span class="toc-nav-text">1.4非监督学习</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1-5%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0"><span class="toc-nav-number">1.1.5.</span> <span class="toc-nav-text">1.5强化学习</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Lecture-2"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">Lecture 2</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2-1%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-nav-number">1.2.1.</span> <span class="toc-nav-text">2.1监督学习</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E5%85%88%E9%AA%8C"><span class="toc-nav-number">1.2.1.1.</span> <span class="toc-nav-text">先验</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E4%BC%BC%E7%84%B6%E5%BA%A6"><span class="toc-nav-number">1.2.1.2.</span> <span class="toc-nav-text">似然度</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E5%90%8E%E9%AA%8C"><span class="toc-nav-number">1.2.1.3.</span> <span class="toc-nav-text">后验</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E7%AD%96%E7%95%A5"><span class="toc-nav-number">1.2.1.4.</span> <span class="toc-nav-text">策略</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2-2%E5%8F%82%E6%95%B0%E4%BC%B0%E8%AE%A1"><span class="toc-nav-number">1.2.2.</span> <span class="toc-nav-text">2.2参数估计</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1-%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82%E6%9E%81%E5%A4%A7%E4%BC%BC%E7%84%B6%E4%BC%B0%E8%AE%A1-%E7%9F%A5%E4%B9%8E-zhihu-com"><span class="toc-nav-number">1.2.2.1.</span> <span class="toc-nav-text">极大似然估计[一文搞懂极大似然估计 - 知乎 (zhihu.com)]</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#MLE%E6%96%B9%E6%B3%95"><span class="toc-nav-number">1.2.2.2.</span> <span class="toc-nav-text">MLE方法</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#BE%E6%96%B9%E6%B3%95-%E8%B4%9D%E5%8F%B6%E6%96%AF%E4%BC%B0%E8%AE%A1-%E7%9F%A5%E4%B9%8E-zhihu-com"><span class="toc-nav-number">1.2.2.3.</span> <span class="toc-nav-text">BE方法[贝叶斯估计 - 知乎 (zhihu.com)]</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#MAP%E6%96%B9%E6%B3%95"><span class="toc-nav-number">1.2.2.4.</span> <span class="toc-nav-text">MAP方法</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Discriminant-Functions-for-the-Normal-Density%E5%88%A4%E5%88%AB%E5%87%BD%E6%95%B0"><span class="toc-nav-number">1.2.2.5.</span> <span class="toc-nav-text">Discriminant Functions for the Normal Density判别函数</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2-3-Naive-Bayes-Classifier%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF"><span class="toc-nav-number">1.2.3.</span> <span class="toc-nav-text">2.3 Naive Bayes Classifier朴素贝叶斯</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Lecture-3"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">Lecture 3</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3-1-Linear-Method-for-Regression"><span class="toc-nav-number">1.3.1.</span> <span class="toc-nav-text">3.1 Linear  Method for Regression</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Linear-Model"><span class="toc-nav-number">1.3.1.1.</span> <span class="toc-nav-text">Linear Model</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Polynomial-Curve-Fitting"><span class="toc-nav-number">1.3.1.2.</span> <span class="toc-nav-text">Polynomial Curve Fitting</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#MSE-Criterion%E5%9D%87%E6%96%B9%E8%AF%AF%E5%B7%AE%E5%88%A4%E6%8D%AE"><span class="toc-nav-number">1.3.1.3.</span> <span class="toc-nav-text">MSE Criterion均方误差判据</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3-2Linear-Regression-Model"><span class="toc-nav-number">1.3.2.</span> <span class="toc-nav-text">3.2Linear Regression Model</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3-3-Statistical-Model-of-Regression"><span class="toc-nav-number">1.3.3.</span> <span class="toc-nav-text">3.3 Statistical Model of Regression</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Overfitting"><span class="toc-nav-number">1.3.3.1.</span> <span class="toc-nav-text">Overfitting</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Ridge-Regression"><span class="toc-nav-number">1.3.3.2.</span> <span class="toc-nav-text">Ridge Regression</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Bayesian-Linear-Regression"><span class="toc-nav-number">1.3.3.3.</span> <span class="toc-nav-text">Bayesian Linear Regression</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3-3-LASSO"><span class="toc-nav-number">1.3.4.</span> <span class="toc-nav-text">3.3 LASSO</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#LASSO-Solution"><span class="toc-nav-number">1.3.4.1.</span> <span class="toc-nav-text">LASSO Solution</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3-4-Model-Assessment-and-Selection"><span class="toc-nav-number">1.3.5.</span> <span class="toc-nav-text">3.4 Model Assessment and Selection</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3-5-Bias-variance-Decomposition"><span class="toc-nav-number">1.3.6.</span> <span class="toc-nav-text">3.5 Bias-variance Decomposition</span></a></li></ol></li></ol></li></ol>
         
         </div>
       </aside>
