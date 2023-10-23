@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://hualingz.cn/Pytoch%E5%AD%A6%E4%B9%A0/2.Tensor/</loc>
+    
+    <lastmod>2023-10-23</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hualingz.cn/Learning/2023-Spring-%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%8A%AF%E7%89%87%E4%B8%8E%E7%B3%BB%E7%BB%9F%2075738bcee30b4ee0b546d5e60d37dfbc/</loc>
+    
+    <lastmod>2023-07-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://hualingz.cn/Learning/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
     
     <lastmod>2023-02-16</lastmod>
@@ -81,7 +95,7 @@
 
   <url>
     <loc>http://hualingz.cn/</loc>
-    <lastmod>2023-02-16</lastmod>
+    <lastmod>2023-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -89,49 +103,70 @@
   
   <url>
     <loc>http://hualingz.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2023-02-16</lastmod>
+    <lastmod>2023-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://hualingz.cn/tags/%E6%B5%99%E6%B1%9F%E5%A4%A7%E5%AD%A6/</loc>
-    <lastmod>2023-02-16</lastmod>
+    <lastmod>2023-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://hualingz.cn/tags/OOP/</loc>
-    <lastmod>2023-02-16</lastmod>
+    <lastmod>2023-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://hualingz.cn/tags/%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2023-02-16</lastmod>
+    <lastmod>2023-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://hualingz.cn/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2023-02-16</lastmod>
+    <lastmod>2023-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://hualingz.cn/tags/CV%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/</loc>
-    <lastmod>2023-02-16</lastmod>
+    <lastmod>2023-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://hualingz.cn/tags/OS%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2023-02-16</lastmod>
+    <lastmod>2023-10-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://hualingz.cn/tags/AI-chip/</loc>
+    <lastmod>2023-10-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://hualingz.cn/tags/AI%E8%8A%AF%E7%89%87%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2023-10-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://hualingz.cn/tags/Pytorch/</loc>
+    <lastmod>2023-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -140,14 +175,21 @@
   
   <url>
     <loc>http://hualingz.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-02-16</lastmod>
+    <lastmod>2023-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://hualingz.cn/categories/%E5%A4%8D%E4%B9%A0%E6%95%B4%E7%90%86/</loc>
-    <lastmod>2023-02-16</lastmod>
+    <lastmod>2023-10-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://hualingz.cn/categories/Pytorch/</loc>
+    <lastmod>2023-10-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
